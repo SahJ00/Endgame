@@ -1,0 +1,136 @@
+section {
+  position: relative;
+  height: 92vh;
+  display: flex;
+  background: #000;
+}
+
+section .screen {
+  position: relative;
+  flex-grow: 2;
+  display: flex;
+  overflow: hidden;
+  transition: 1s;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+section:hover .screen {
+  opacity: 0.1;
+}
+
+section .screen:hover {
+  flex-grow: 5;
+  opacity: 1;
+}
+
+section .screen .content {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  background: #FFF;
+  padding: 40px;
+  box-sizing: border-box;
+  transform: translateX(100%);
+  transition: 0.5s;
+  text-align: justify;
+  border-radius: 10px 0px 0px 10px;
+}
+
+section .screen:hover .content {
+  transform: translateX(0);
+  transition-delay: 1s;
+}
+
+section .screen .content h2 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 30px;
+
+}
+
+section .screen:nth-child(1) .content h2 {
+  color: #353d3f;
+}
+
+section .screen:nth-child(2) .content h2 {
+  color: #6fa53a;
+}
+
+section .screen:nth-child(3) .content h2 {
+  color: #ed363a;
+}
+
+section .screen:nth-child(4) .content h2 {
+  color: #183e56;
+}
+
+section .screen:nth-child(5) .content h2 {
+  color: #ed363a;
+}
+
+section .screen:nth-child(6) .content h2 {
+  color: #110656;
+}
+
+section .screen .content p {
+  margin: 0;
+  padding: 0;
+
+}
+
+.screen:nth-child(1),
+.screen:nth-child(2),
+.screen:nth-child(3),
+.screen:nth-child(4),
+.screen:nth-child(5),
+.screen:nth-child(6) {
+  filter: grayscale(1);
+  transition: 1s
+}
+
+.screen:nth-child(1):hover,
+.screen:nth-child(2):hover,
+.screen:nth-child(3):hover,
+.screen:nth-child(4):hover,
+.screen:nth-child(5):hover,
+.screen:nth-child(6):hover {
+  filter: grayscale(0);
+}
+
+section .screen:nth-child(1) {
+  background: url('../../../assets/images/dead/fury.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section .screen:nth-child(2) {
+  background: url('../../../assets/images/dead/gamora.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section .screen:nth-child(3) {
+  background: url('../../../assets/images/dead/lord.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section .screen:nth-child(4) {
+  background: url('../../../assets/images/dead/panther.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section .screen:nth-child(5) {
+  background: url('../../../assets/images/dead/spiderman.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section .screen:nth-child(6) {
+  background: url('../../../assets/images/dead/strange.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
